@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CovalentLayoutModule } from '@covalent/core/layout';
@@ -36,7 +37,8 @@ import { HoursDirective } from './validators/hours.directive';
     CovalentLayoutModule,
     CovalentStepsModule,
     CovalentDialogsModule,
-    CovalentLoadingModule
+    CovalentLoadingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
